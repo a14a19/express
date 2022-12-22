@@ -4,6 +4,6 @@ const { getItems, createItem, updateItem, deleteItem } = require('../controllers
 ItemRoutes.get('/', getItems)
 ItemRoutes.post('/', createItem)
 ItemRoutes.put('/:itemId', updateItem)
-ItemRoutes.put('/:itemId', deleteItem)
+ItemRoutes.delete('/:itemId', deleteItem)
 
 module.exports = ItemRoutes;
