@@ -46,6 +46,6 @@ app.use('/', (req, res, next) => {
 
 app.use('/', routes);
 
-app.listen(process.env.PORT, process.env.LOCAL_NAME, () => {
-    console.log(`server at - http://${process.env.LOCAL_NAME}:${process.env.PORT}`);
+app.listen(process.env.PORT, process.env.HOSTNAME, () => {
+    console.log(`server at - http://${process.env.HOSTNAME}:${process.env.PORT}`);
 });
